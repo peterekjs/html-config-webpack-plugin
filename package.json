@@ -1,0 +1,39 @@
+{
+  "name": "@peterek/html-config-webpack-plugin",
+  "version": "0.0.0",
+  "description": "Webpack configuration plugin for HTML compilation",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterekjs/html-config-webpack-plugin.git"
+  },
+  "keywords": [
+    "html",
+    "webpack",
+    "plugin"
+  ],
+  "author": "Jiri Peterek <jiri.peterek@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterekjs/html-config-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/peterekjs/html-config-webpack-plugin#readme",
+  "engines": {
+    "npm": ">=5",
+    "node": ">=12"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  },
+  "devDependencies": {
+    "@peterek/eslint-config-base": "^1.1.3",
+    "@peterek/eslint-config-indent": "^1.0.2",
+    "@types/node": "^13.9.8",
+    "@types/webpack": "^4.41.10",
+    "eslint": "^6.8.0",
+    "ts-essentials": "^6.0.4"
+  }
+}
