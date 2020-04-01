@@ -6,14 +6,14 @@
 /** @typedef {import('ts-essentials').DeepRequired<import("webpack").Compiler>} WebpackCompiler */
 /**
  * Plugin Options
- * @typedef {{ mode?: 'production' | 'development'; }} HtmlWebpackPluginOptions
+ * @typedef {{ mode?: 'production' | 'development'; }} HtmlConfigWebpackPluginOptions
  */
 const defaultOptions = {}
 
 class HtmlConfigWebpackPlugin
 {
     /**
-     * @param {Partial<HtmlWebpackPluginOptions>} [options]
+     * @param {Partial<HtmlConfigWebpackPluginOptions>} [options]
      */
     constructor (options = {})
     {

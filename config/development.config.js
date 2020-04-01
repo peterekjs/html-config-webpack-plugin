@@ -1,7 +1,7 @@
 /**
  * Common Development Config
  *
- * @param {Required<import("./index.js").HtmlWebpackPluginOptions>} options
+ * @param {Required<import("../index.js").HtmlConfigWebpackPluginOptions>} options
  * @returns {{ module: { rules : Array<any> }, plugins: Array<(new (): any)> }}
  */
 exports = module.exports = options => ({
