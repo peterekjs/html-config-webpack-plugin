@@ -6,7 +6,31 @@
  */
 exports = module.exports = options => ({
     module: {
-        rules: []
+        rules: [{
+            test: /\.html$/i,
+            exclude: /\.tpl\.html$/i,
+            use: [{
+                loader: require.resolve('file-loader'),
+                options: {
+                    name: '[path][name].[ext]'
+                },
+            }, {
+                loader: require.resolve('extract-loader'),
+            }, {
+                loader: require.resolve('html-loader'),
+                options: {
+                    attributes: false,
+                },
+            }],
+        }, {
+            test: /\.tpl\.html$/i,
+            use: [{
+                loader: require.resolve('html-loader'),
+                options: {
+                    attributes: false,
+                },
+            }]
+        }]
     },
     plugins: []
 })

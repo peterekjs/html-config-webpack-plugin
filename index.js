@@ -39,8 +39,6 @@ class HtmlConfigWebpackPlugin
             ? require('./config/production.config')(options)
             : require('./config/development.config')(options)
 
-        console.log('hey ======>', compiler.options.mode)
-
         // Merge config
         compiler.options.plugins.push(...config.plugins)
         compiler.hooks.afterEnvironment.tap('SassWebpackPlugin', () =>
