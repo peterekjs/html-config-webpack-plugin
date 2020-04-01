@@ -15,7 +15,7 @@ exports = module.exports = options => ({
                     name: '[path][name].[ext]'
                 },
             }, {
-                loader: require.resolve('extract-loader'),
+                loader: require.resolve('@peterek/extract-loader'),
             }, {
                 loader: require.resolve('html-loader'),
                 options: {
