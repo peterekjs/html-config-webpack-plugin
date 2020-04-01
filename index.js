@@ -30,6 +30,9 @@ class HtmlConfigWebpackPlugin
             compiler.options.mode
         ].some(mode => mode === 'production')
 
+        /**
+         * @type {Required<HtmlConfigWebpackPluginOptions>}
+         */
         const options = {
             mode: modeProduction ? 'production' : 'development',
             ...this.options
