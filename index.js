@@ -8,9 +8,7 @@
  * Plugin Options
  * @typedef {{ mode?: 'production' | 'development'; }} HtmlWebpackPluginOptions
  */
-const defaultOptions = {
-    mode: 'production',
-}
+const defaultOptions = {}
 
 class HtmlConfigWebpackPlugin
 {
@@ -40,6 +38,8 @@ class HtmlConfigWebpackPlugin
         const config = modeProduction
             ? require('./config/production.config')(options)
             : require('./config/development.config')(options)
+
+        console.log('hey ======>', compiler.options.mode)
 
         // Merge config
         compiler.options.plugins.push(...config.plugins)
