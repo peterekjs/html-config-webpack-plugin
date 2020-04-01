@@ -1,6 +1,6 @@
 {
   "name": "@peterek/html-config-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Webpack configuration plugin for HTML compilation",
   "main": "index.js",
   "scripts": {
